@@ -1,0 +1,9 @@
+#Exports everything in handy csv format
+load reporting/csv_file
+set source hosts
+run
+set source ports
+run
+set source contacts
+run
+exit

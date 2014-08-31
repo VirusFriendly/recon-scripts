@@ -1,0 +1,55 @@
+#Quick and Dirty Recon
+#Look ma no hands!
+#Just create a new workspace and set the domain and launch recon-ng with this script
+load recon/hosts/gather/dns/brute_force
+run
+exit
+load recon/hosts/gather/http/web/baidu_site
+run
+exit
+load recon/hosts/gather/http/web/bing_domain
+run
+exit
+load recon/hosts/gather/http/web/google_site
+run
+exit
+load recon/hosts/gather/http/web/ip_neighbor
+run
+exit
+load recon/hosts/gather/http/web/ssl_san
+run
+exit
+load recon/hosts/gather/http/web/netcraft
+run
+exit
+load recon/hosts/gather/http/web/yahoo_site
+run
+exit
+load recon/hosts/enum/dns/resolve
+run
+exit
+load recon/hosts/gather/http/web/census_2012
+set store_table ports
+run
+exit 
+load recon/hosts/gather/http/web/same_ip
+run
+exit
+load recon/hosts/enum/dns/resolve
+run
+exit
+load recon/contacts/gather/http/api/whois_pocs
+run
+exit
+load recon/contacts/gather/http/web/pgp_search
+run
+exit
+load reporting/csv_file
+set source hosts
+run
+set source ports
+run
+set source contacts
+run
+exit
+exit

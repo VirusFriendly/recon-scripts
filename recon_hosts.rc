@@ -1,0 +1,25 @@
+#Populates the Host table
+load recon/hosts/gather/dns/brute_force
+run
+exit
+load recon/hosts/gather/http/web/baidu_site
+run
+exit
+load recon/hosts/gather/http/web/bing_domain
+run
+exit
+load recon/hosts/gather/http/web/google_site
+run
+exit
+load recon/hosts/gather/http/web/ip_neighbor
+run
+exit
+load recon/hosts/gather/http/web/ssl_san
+run
+exit
+load recon/hosts/gather/http/web/netcraft
+run
+exit
+load recon/hosts/gather/http/web/yahoo_site
+run
+exit

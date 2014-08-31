@@ -1,0 +1,6 @@
+#This is to test for a timeout loop
+#Previous version of this script would attempt to resolve a query indefinitely.
+load recon/hosts/gather/dns/brute_force
+set domain ai.mit.edu
+#ipv6.ai.mit.edu timesout repeatedly and triggered this scenario
+run

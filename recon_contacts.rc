@@ -1,0 +1,7 @@
+#Populates the contacts table
+load recon/contacts/gather/http/api/whois_pocs
+run
+exit
+load recon/contacts/gather/http/web/pgp_search
+run
+exit

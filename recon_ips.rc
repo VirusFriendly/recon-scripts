@@ -1,0 +1,14 @@
+#Populates the Host table with IP addresses
+load recon/hosts/enum/dns/resolve
+run
+exit
+load recon/hosts/gather/http/web/census_2012
+set store_table ports
+run
+exit 
+load recon/hosts/gather/http/web/same_ip
+run
+exit
+load recon/hosts/enum/dns/resolve
+run
+exit
